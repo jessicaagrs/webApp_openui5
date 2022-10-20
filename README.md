@@ -8,7 +8,7 @@ Esse web app permite:
 
 Utilizei a função filter e obtive os dados pelo binding.
 
-- Ao clicar no ícone de edição é possível ver detalhes da tarefa e também editar id, title e completed:
+- Ao clicar no ícone de edição é possível ver detalhes da tarefa (dialog) e também editar id, title e completed:
 
 ![N|Solid](https://media.giphy.com/media/2a2NymWGzvo620RRZY/giphy.gif)
 
