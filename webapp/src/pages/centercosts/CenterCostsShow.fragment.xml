@@ -1,0 +1,74 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+    xmlns:cOne="MyUI5WebApp.controls"
+	xmlns:core="sap.ui.core">
+    <Label
+        required="{path:'Dimensions>/0/Dimension/DimActive', formatter:'.fmt.dimActive'}"
+        visible="{path:'Dimensions>/0/Dimension/DimActive', formatter:'.fmt.dimActive'}"
+        text="{Dimensions>/0/Dimension/DimDesc}" />
+    <cOne:CenterCostsSearch
+        dimension="1"
+        enableSuggestions="true"
+        enabled="{viewModel>/edit}"
+        visible="{path:'Dimensions>/0/Dimension/DimActive', formatter:'.fmt.dimActive'}"
+        id="selectDimension1"
+        value="{SelectedCenterCosts>/OcrName}"
+        search="onSerchDimession"
+        width="100%" />
+    <Label
+        required="{path:'Dimensions>/1/Dimension/DimActive', formatter:'.fmt.dimActive'}"
+        visible="{path:'Dimensions>/1/Dimension/DimActive', formatter:'.fmt.dimActive'}"
+        text="{Dimensions>/1/Dimension/DimDesc}" />
+    <cOne:CenterCostsSearch
+        enableSuggestions="true"
+        dimension="2"
+        enabled="{viewModel>/edit}"
+        visible="{path:'Dimensions>/1/Dimension/DimActive', formatter:'.fmt.dimActive'}"
+        id="selectDimension2"
+        value="{SelectedCenterCosts>/OcrName2}"
+        search="onSerchDimession"  width="100%">
+    </cOne:CenterCostsSearch>
+
+    <Label
+        visible="{path:'Dimensions>/2/Dimension/DimActive', formatter:'.fmt.dimActive'}"
+        required="{path:'Dimensions>/2/Dimension/DimActive', formatter:'.fmt.dimActive'}"
+        text="{Dimensions>/2/Dimension/DimDesc}"/>
+     <cOne:CenterCostsSearch
+        enableSuggestions="true"
+        dimension="3"
+        enabled="{viewModel>/edit}"
+        visible="{path:'Dimensions>/2/Dimension/DimActive', formatter:'.fmt.dimActive'}"
+        id="selectDimension3"
+        value="{SelectedCenterCosts>/OcrName3}"
+        search="onSerchDimession"  width="100%">
+    </cOne:CenterCostsSearch>
+
+    <Label
+        visible="{path:'Dimensions>/3/Dimension/DimActive', formatter:'.fmt.dimActive'}"
+        required="{path:'Dimensions>/3/Dimension/DimActive', formatter:'.fmt.dimActive'}"
+        text="{Dimensions>/3/Dimension/DimDesc}" />
+        <cOne:CenterCostsSearch
+        enableSuggestions="true"
+
+        dimension="4"
+        enabled="{viewModel>/edit}"
+        visible="{path:'Dimensions>/3/Dimension/DimActive', formatter:'.fmt.dimActive'}"
+        id="selectDimension4"
+        value="{SelectedCenterCosts>/OcrName4}"
+        search="onSerchDimession"  width="100%">
+    </cOne:CenterCostsSearch>
+    <Label
+        required="{path:'Dimensions>/4/Dimension/DimActive', formatter:'.fmt.dimActive'}"
+        visible="{path:'Dimensions>/4/Dimension/DimActive', formatter:'.fmt.dimActive'}"
+        text="{Dimensions>/4/Dimension/DimDesc}" />
+     <cOne:CenterCostsSearch
+        enableSuggestions="true"
+
+        dimension="5"
+        enabled="{viewModel>/edit}"
+        visible="{path:'Dimensions>/4/Dimension/DimActive', formatter:'.fmt.dimActive'}"
+        id="selectDimension5"
+        value="{SelectedCenterCosts>/OcrName5}"
+        search="onSerchDimession"  width="100%">
+    </cOne:CenterCostsSearch>
+</core:FragmentDefinition>

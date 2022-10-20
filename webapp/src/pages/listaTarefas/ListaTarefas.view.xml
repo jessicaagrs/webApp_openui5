@@ -1,0 +1,69 @@
+<core:View
+	xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.layout"
+	xmlns:model="sap.ui.model"
+	xmlns="sap.m"
+	height="100%"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:tnt="sap.tnt"
+	xmlns:sing="MyUI5WebApp.controls.signature"
+	xmlns:custom="MyUI5WebApp.controls"
+	xmlns:quillEditor="MyUI5WebApp.controls.quill"
+	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	controllerName="MyUI5WebApp.src.pages.listaTarefas.ListaTarefas">
+
+	<Page title="{i18n>Commom.ListaTarefas}" >
+		<content>			
+			<Table id="idTasksTable"
+			mode="Delete"
+			delete="taskDelete"
+			items="{/}">
+				<headerToolbar>
+					<OverflowToolbar>
+						<content>
+							<Button icon="sap-icon://add" press="addRow"/>
+							<ToolbarSpacer />
+								<SearchField id="searchField" width="auto" search=".searchTasks" />
+						</content>
+					</OverflowToolbar>
+				</headerToolbar>
+				<columns>
+					<Column
+						class="table-header-text-alignment">
+						<Text text="{i18n>Commom.Edit}" />
+					</Column>
+					<Column
+						class="table-header-text-alignment">
+						<Text text="{i18n>Commom.Identificador}"/>
+					</Column>
+					<Column
+						id="title"
+						minScreenWidth="Tablet"
+						class="table-header-text-alignment"
+						demandPopin="true">
+						<Text text="{i18n>Commom.Desc}"/>
+					</Column>
+					<Column
+						minScreenWidth="Tablet"
+						demandPopin="true"
+						class="table-header-text-alignment">
+						<Text text="{i18n>Commom.status}"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem vAlign="Middle">
+						<cells>
+							<Button icon="sap-icon://edit" press="onOpenDialog"/>
+							<ObjectIdentifier
+								text="{id}"/>
+							<Text
+								text="{title}"/>
+							<Text
+								text="{completed}" />
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+	</Page>
+</core:View>

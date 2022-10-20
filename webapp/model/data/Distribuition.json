@@ -1,0 +1,551 @@
+[
+  {
+    "Dimension": {
+      "DimActive": "Y",
+      "DimCode": 1,
+      "DimDesc": "CENTRO DE CUSTO",
+      "DimName": "Dimensão 1",
+      "Active": true
+    },
+    "CenterCosts": [
+      {
+        "OcrCode": "1",
+        "OcrName": "RATEIO FOLHA",
+        "Locked": "N",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "1.1",
+        "OcrName": "TODOS C.C.",
+        "Locked": "N",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "1010101",
+        "OcrName": "Administrativo Geral",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "1010102",
+        "OcrName": "SAP",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "1010201",
+        "OcrName": "Conselho Superior",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "1010202",
+        "OcrName": "Conselho Fiscal",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "1010301",
+        "OcrName": "Diretor-Presidente",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "1010302",
+        "OcrName": "Diretor-Secretaria",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "1010303",
+        "OcrName": "Diretor-Financeira",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "1010401",
+        "OcrName": "Superintendência",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "1010501",
+        "OcrName": "Secretaria Executiva",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "1010502",
+        "OcrName": "Assessoria de Comunicação",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "1010503",
+        "OcrName": "Assessoria de Gestão",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "1010601",
+        "OcrName": "Consultoria Jurídica",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "1010701",
+        "OcrName": "Gerência de Projetos",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "1010702",
+        "OcrName": "Núcleo de Prospecção",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "1010703",
+        "OcrName": "Núcleo de Acomp. de Projeto",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "1010704",
+        "OcrName": "Núcleo de Prestação de Contas",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "1010801",
+        "OcrName": "Gerência de Empreendimentos",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "1010802",
+        "OcrName": "Supervisão de Restaurante",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "1010803",
+        "OcrName": "Núcleo de Gestão de Eventos",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "1010804",
+        "OcrName": "Núcleo de Gestão de Cursos",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "1010901",
+        "OcrName": "Gerência Administrativo-Financ",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "1010902",
+        "OcrName": "Supervião Financeiro-Contábil",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "1010903",
+        "OcrName": "Supervisão de TI",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "1010904",
+        "OcrName": "Supervisão de Materiais e Supr",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "1010905",
+        "OcrName": "Supervisão de Gestão de Pessoa",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "1010906",
+        "OcrName": "Núcleo de Serviços Gerais",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "1010907",
+        "OcrName": "Núcleo de Documentação",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "2010101",
+        "OcrName": "Convênios Nacionais",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "2010102",
+        "OcrName": "Convênios Internacional",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "2010103",
+        "OcrName": "Apoio a Importação tipo \"A\"",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "2010201",
+        "OcrName": "Contratos",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "3010101",
+        "OcrName": "Editais Finatec",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "4010101",
+        "OcrName": "Fundo de Apoio",
+        "Locked": "Y",
+        "DimCode": 1,
+        "Active": "Y"
+      }
+    ]
+  },
+  {
+    "Dimension": {
+      "DimActive": "Y",
+      "DimCode": 2,
+      "DimDesc": "RUBRICA",
+      "DimName": "Dimensão 2",
+      "Active": true
+    },
+    "CenterCosts": [
+      {
+        "OcrCode": "0001",
+        "OcrName": "Auxílio Financeiro a Estudante",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0002",
+        "OcrName": "Auxílio Financeiro Pesquisador",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0003",
+        "OcrName": "Bolsa de pesquisa",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0004",
+        "OcrName": "Despesa com Pessoal",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0005",
+        "OcrName": "Desp Acessórias de Importação",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0006",
+        "OcrName": "Desp Administrativas - Finatec",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0007",
+        "OcrName": "Desp Administrativas - UnB",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0008",
+        "OcrName": "Desp c/Veículos e Consumíveis",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0009",
+        "OcrName": "Despesas com viagens",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0010",
+        "OcrName": "Despesas com Transporte",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0011",
+        "OcrName": "Despesas Diversas",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0012",
+        "OcrName": "Despesas Financeiras",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0013",
+        "OcrName": "Diárias Internacional",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0014",
+        "OcrName": "Diárias Nacionais",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0015",
+        "OcrName": "Emprestimos",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0016",
+        "OcrName": "Encargos - ISS 5%",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0017",
+        "OcrName": "Estagiário",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0018",
+        "OcrName": "Livros e Publicação",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0019",
+        "OcrName": "Manutenção de Equipamentos",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0020",
+        "OcrName": "Mat. Permanente e Eq. Nacional",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0021",
+        "OcrName": "Mat.Permanente e Eq. Importado",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0022",
+        "OcrName": "Material Bibliográfico",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0023",
+        "OcrName": "Material de Consumo Importado",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0024",
+        "OcrName": "Material de Consumo Nacional",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0025",
+        "OcrName": "Obras e Instalações",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0026",
+        "OcrName": "Obrigações Trib Contributivas",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0027",
+        "OcrName": "Outros",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0028",
+        "OcrName": "Passagens e Desp c/Locomoção",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0029",
+        "OcrName": "Publicações",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0030",
+        "OcrName": "Reembolso",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0031",
+        "OcrName": "Seguros e IPVA de veículos",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0032",
+        "OcrName": "Seleção e Treinamento",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0033",
+        "OcrName": "Serviços de Terceiros PF",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0034",
+        "OcrName": "Serviços de Terceiros PJ",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0035",
+        "OcrName": "Software",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      },
+      {
+        "OcrCode": "0036",
+        "OcrName": "Taxas de Inscrição",
+        "Locked": "Y",
+        "DimCode": 2,
+        "Active": "Y"
+      }
+    ]
+  },
+  {
+    "Dimension": {
+      "DimActive": "N",
+      "DimCode": 3,
+      "DimDesc": "Dimensão 3",
+      "DimName": "Dimensão 3",
+      "Active": false
+    },
+    "CenterCosts": []
+  },
+  {
+    "Dimension": {
+      "DimActive": "N",
+      "DimCode": 4,
+      "DimDesc": "Dimensão 4",
+      "DimName": "Dimensão 4",
+      "Active": false
+    },
+    "CenterCosts": []
+  },
+  {
+    "Dimension": {
+      "DimActive": "N",
+      "DimCode": 5,
+      "DimDesc": "Dimensão 5",
+      "DimName": "Dimensão 5",
+      "Active": false
+    },
+    "CenterCosts": []
+  }
+]

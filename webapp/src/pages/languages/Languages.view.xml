@@ -1,0 +1,73 @@
+<mvc:View
+	controllerName="MyUI5WebApp.src.pages.languages.Languages"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+	xmlns:tnt="sap.tnt" >
+
+  <Page  id="pageLang" navButtonPress="onNavBack" showNavButton="true" floatingFooter="true" backgroundDesign="Transparent" title="{i18n>Commom.Language}">
+		<IconTabBar applyContentPadding="false">
+			<items>
+				<IconTabFilter text="{i18n>Commom.System}"  iconColor="Positive" count="{/length}">
+					<Table id="tableLanguage" growing="true" alternateRowColors="true" items="{/}">
+						<headerToolbar>
+							<Toolbar>
+								<SearchField search="handleSearch" width="100%" />
+							</Toolbar>
+						</headerToolbar>
+						<columns>
+							<Column width="25%"  demandPopin="true"  minScreenWidth="Tablet">
+
+							</Column>
+							<Column  demandPopin="true" minScreenWidth="Phone">
+								<Text text="{i18n>Commom.Translate}" />
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<tnt:InfoLabel text="{key}" renderMode="Narrow" colorScheme="8" displayOnly= "true"/>
+									<Input change="markToEdit" value="{value}" />
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</IconTabFilter>
+				<IconTabFilter    text="{i18n>Commom.Custom}" iconColor="Critical" count="{Custom>/length}">
+					<Table id="tableLanguageCustom" growing="true" alternateRowColors="true" items="{Custom>/}">
+						<headerToolbar>
+							<Toolbar>
+								<SearchField search="handleSearchCustom" width="100%" />
+							</Toolbar>
+						</headerToolbar>
+						<columns>
+							<Column  width="25%" minScreenWidth="Tablet"  demandPopin="true" >
+
+							</Column>
+							<Column  minScreenWidth="Phone">
+								<Text text="{i18n>Commom.Translate}" />
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<tnt:InfoLabel text="{Custom>key}" renderMode="Narrow" colorScheme="2" displayOnly= "true"/>
+									<Input change="markToEditCustom" value="{Custom>value}" />
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</IconTabFilter>
+			</items>
+		</IconTabBar>
+
+		<footer>
+			<Bar>
+				<contentRight>
+					<Button text="{i18n>Commom.Save}" type="Accept" press="_save"></Button>
+				</contentRight>
+			</Bar>
+		</footer>
+	</Page>
+</mvc:View>

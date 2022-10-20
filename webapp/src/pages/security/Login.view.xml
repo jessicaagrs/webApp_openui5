@@ -1,0 +1,33 @@
+<mvc:View
+	controllerName="MyUI5WebApp.src.pages.security.Login"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:tnt="sap.tnt"
+	height="100%">
+	<Page class="loginBG" backgroundDesign="Transparent"  showHeader="false" id="MyUI5WebAppLoginPage" >
+		<content>
+
+			<VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
+
+				<items>
+					<Input id="userName" placeholder="{i18n>Commom.User}" value="{/UserName}"></Input>
+					<Input id="userPass" placeholder="{i18n>Commom.Password}" type="Password" value="{/Password}" ></Input>
+					<Button id="loginButton" width="11rem" text="{i18n>Commom.Login}" type="Emphasized" press="onLogin"></Button>
+
+				</items>
+			</VBox>
+
+		</content>
+		<footer>
+			<Bar>
+				<contentLeft>
+					<Link class="sapUiTinyMarginBegin" href="{i18n>App.Link}"  target="_blank"   text="{i18n>Commom.CompanyName}"></Link>
+				</contentLeft>
+				<contentRight>
+					<Text class="sapUiTinyMarginEnd" text="{i18n>App.Name}"></Text>
+				</contentRight>
+			</Bar>
+		</footer>
+	</Page>
+</mvc:View>

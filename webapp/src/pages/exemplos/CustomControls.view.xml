@@ -1,0 +1,119 @@
+<core:View
+	xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.layout"
+	xmlns="sap.m"
+	height="100%"
+	xmlns:sing="MyUI5WebApp.controls.signature"
+	xmlns:qr="MyUI5WebApp.controls.qrcode"
+	xmlns:custom="MyUI5WebApp.controls"
+	xmlns:quillEditor="MyUI5WebApp.controls.quill"
+	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	controllerName="MyUI5WebApp.src.pages.exemplos.CustomControls">
+
+	<Page title="{i18n>Commom.ControlTest}"  >
+	<content>
+	<Panel expandable="true" expanded="false" width="auto" class="sapUiResponsiveMargin">
+		<headerToolbar>
+			<Toolbar height="3rem" style="Clear">
+				<Title text="Input de Assinaturas" />
+				<Button icon="sap-icon://text-color" text="Cor da caneta" press="openDefaultModeSample" />
+				<Button icon="sap-icon://signature" text="Assinar" press="activateSignature" />
+				<Button icon="sap-icon://eraser" text="Limpar" press="clearSignature" />
+				<Button icon="sap-icon://save" text="Salvar" press="exportSignature" />
+				<ToolbarSpacer />
+			</Toolbar>
+		</headerToolbar>
+		<content>
+				<FlexBox
+					alignItems="Center"
+					direction="Column"
+					justifyContent="SpaceBetween">
+					<items>
+						<sing:UISignature
+							id="signature"
+							width="500px"
+							penColor="black"
+							bgColor="white"
+							underline="true" />
+						<ToolbarSpacer />
+
+						<Image
+							src="{signature>/signatureIMG}"
+							densityAware="false"
+						/>
+
+
+					</items>
+				</FlexBox>
+		</content>
+	</Panel>
+
+	<Panel expandable="true" expanded="false" width="auto" class="sapUiResponsiveMargin">
+		<headerToolbar>
+			<Toolbar height="3rem" style="Clear">
+				<Title text="Paginador" />
+
+				<ToolbarSpacer />
+			</Toolbar>
+		</headerToolbar>
+		<content>
+				<FlexBox
+					alignItems="Center"
+					direction="Column"
+					justifyContent="SpaceBetween">
+					<items>
+					<custom:Paginator count="100" currentPage="10" onSelectPage="onPageChanged" />
+
+					</items>
+				</FlexBox>
+		</content>
+	</Panel>
+
+	<Panel expandable="true" expanded="false" width="auto" class="sapUiResponsiveMargin">
+		<headerToolbar>
+			<Toolbar height="3rem" style="Clear">
+				<Title text="Html Editor" />
+				<Button icon="sap-icon://signature" text="Preencher " press="fillHtmlValue" />
+
+
+			</Toolbar>
+		</headerToolbar>
+		<content>
+
+			<quillEditor:QuillEditor value="{htmlEditor>/value}" />
+			<Panel expandable="true" expanded="false">
+			<headerToolbar>
+				<Toolbar design="Info" style="Clear">
+					<Title text="Resultado HTML" />
+				</Toolbar>
+			</headerToolbar>
+				<content>
+					<Text text="{htmlEditor>/value}" />
+				</content>
+			</Panel>
+		</content>
+	</Panel>
+	<Panel expandable="true" expanded="false" width="auto" class="sapUiResponsiveMargin">
+		<headerToolbar>
+			<Toolbar height="3rem" style="Clear">
+				<Title text="QR CODE" />
+			 <Button icon="sap-icon://refresh" text="Atualizar " press="makeQR" />
+
+
+			</Toolbar>
+		</headerToolbar>
+		<content>
+      <HBox>
+        <VBox width="50%">
+			    <TextArea id="stringValue"  rows="6"   value="{qrCodeModel>/ValueString}"  width="96%"  />
+        </VBox>
+        <VBox width="50%">
+          <qr:QRCode id="qrinput" value="{qrCodeModel>/Value}" />
+        </VBox>
+      </HBox>
+		</content>
+	</Panel>
+	</content>
+	</Page>
+
+</core:View>

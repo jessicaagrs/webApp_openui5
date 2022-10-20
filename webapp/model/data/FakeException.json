@@ -1,0 +1,50 @@
+[
+  {
+    "description": "Informe a data de início do contrato..",
+    "exceptionType": "Error",
+    "message": "ínicio contrato",
+    "data": {},
+    "innerException": null,
+    "targetSite": null,
+    "stackTrace": null,
+    "helpLink": null,
+    "source": null,
+    "hResult": -2146233088
+  },
+  {
+    "description": "Informe a quantidade negociada no contrato.",
+    "exceptionType": "Warning",
+    "message": "quantidade negociada",
+    "data": {},
+    "innerException": null,
+    "targetSite": null,
+    "stackTrace": null,
+    "helpLink": null,
+    "source": null,
+    "hResult": -2146233088
+  },
+  {
+    "description": "Informe o valor negociado no contrato.",
+    "exceptionType": "Warning",
+    "message": "valor negociado",
+    "data": {},
+    "innerException": null,
+    "targetSite": null,
+    "stackTrace": null,
+    "helpLink": null,
+    "source": null,
+    "hResult": -2146233088
+  },
+  {
+    "description": "Informe a duração em meses do contrato.",
+    "exceptionType": "Information",
+    "message": "duração em meses ",
+    "data": {},
+    "innerException": null,
+    "targetSite": null,
+    "stackTrace": null,
+    "helpLink": null,
+    "source": null,
+    "hResult": -2146233088
+  }
+]

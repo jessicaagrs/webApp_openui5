@@ -1,0 +1,81 @@
+<mvc:View
+	controllerName="MyUI5WebApp.src.pages.settings.Edit"
+	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+	xmlns="sap.m">
+
+	<Page
+	id="settingsPage"
+	navButtonPress="onNavBack"
+	showNavButton="true"
+	title="{i18n>Commom.Settings}">
+
+		<content>
+			<IconTabBar id="idIconTabBar" applyContentPadding="true">
+				<items>
+					<IconTabFilter icon="sap-icon://user-settings" iconColor="Critical" text="{i18n>Commom.User}">
+						<l:Grid defaultSpan="L4 M6 S6" class="sapUiSmallMarginTop">
+							<l:content>
+								<VBox>
+									<Label  text="{i18n>App.Theme}"  labelFor="number"  />
+									<Select
+										selectedKey="{Settings>/Theme}"
+										change="applyConfig"
+										items="{path: 'oViewModelSelections>/themes', templateShareable:false}">
+										<core:Item key="{oViewModelSelections>Id}"  text="{oViewModelSelections>Description}" />
+									</Select>
+								</VBox>
+							</l:content>
+						</l:Grid>
+					</IconTabFilter>
+					<IconTabSeparator />
+					<IconTabFilter icon="sap-icon://performance" iconColor="{path : 'Settings>/MaxRecordsPerSearch', formatter: '.formatter.formatIconColor'}" text="{i18n>App.Performance}">
+						<l:Grid defaultSpan="L12 M12 S12" class="sapUiSmallMarginTop">
+							<l:content>
+								<VBox>
+								<ObjectStatus
+									class="sapUiSmallMarginBottom"
+									text="{i18n>Setting.MaxRecordsPerSearch}"
+									state="{
+										path: 'Settings>/MaxRecordsPerSearch',
+										formatter: '.formatter.maxRecordsPerSearch'
+									}" />
+
+									<Slider min="25" max="300"  change="Save"   value="{Settings>/MaxRecordsPerSearch}"   step="25"  enableTickmarks="true" class="sapUiSmallMarginBottom" width="100%">
+										<ResponsiveScale tickmarksBetweenLabels="3"/>
+									</Slider>
+								</VBox>
+
+							</l:content>
+						</l:Grid>
+					</IconTabFilter>
+					<IconTabSeparator />
+						<IconTabFilter icon="sap-icon://action-settings" iconColor="Positive" text="{i18n>Commom.GeneralSettings}">
+						<l:Grid defaultSpan="L12 M12 S12">
+							<l:content>
+									<l:HorizontalLayout
+										allowWrapping="true">
+
+										<GenericTile
+                    headerImage="sap-icon://globe"
+										press="_onNavRouter"
+										header="{i18n>Commom.Language}"
+										app:router="languages"
+										subheader="{i18n>Commom.LanguageSub}"
+										scope="Display"
+										class="sapUiTinyMargin">
+										</GenericTile>
+
+									</l:HorizontalLayout>
+
+
+							</l:content>
+						</l:Grid>
+					</IconTabFilter>
+				</items>
+			</IconTabBar>
+		</content>
+	</Page>
+</mvc:View>

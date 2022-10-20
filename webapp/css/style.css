@@ -1,0 +1,26 @@
+.sapUiBodyBackground, .sapUiBody{
+	background-color: #3F5161 !important;
+}
+.loginBG:before {
+	content: "";
+	position: inherit;
+	z-index: -1;
+	display: block;
+	background: url("../img/bg.jpg") no-repeat center center fixed;
+	background-size: cover;
+	width: 100%;
+	height: inherit;
+	overflow: hidden;
+	-webkit-filter: blur(2px);
+	-moz-filter: blur(2px);
+	-o-filter: blur(2px);
+	-ms-filter: blur(2px);
+	filter: blur(2px);
+}
+
+.img-logo-topo{
+	filter: invert(99%);
+	filter: brightness(3.5);
+	max-height: 1.5em;
+}
+
