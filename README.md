@@ -1,6 +1,6 @@
 # Lista de Tarefas
 
-Desafio Brgaap utilizando SAPUI5, Javascript consumindo dados em JSON.
+Desafio Br Gaap utilizando SAPUI5, Javascript e consumindo dados em JSON.
 
 Esse web app permite:
 
