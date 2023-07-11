@@ -1,5 +1,7 @@
 # Lista de Tarefas
 
+Desafio Brgaap utilizando SAPUI5, Javascript consumindo dados em JSON.
+
 Esse web app permite:
 
 - Pesquisar dados da tabela:
